@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>B2C</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready (function(){
+                $(".navbar a, footer a[href='#myPage']").on('click', function(event){
+                    if (this.hash !==""){
+                        event.preventDefault();
+                        var hash = this.hash;
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 900, function(){
+                            window.location.hash = hash;
+                        });
+                    }
+                });
+            })
+        </script>
+        <style>
+            .jumbotron {
+                background-color: #FFFFFF;
+                color: #FFFFFF;
+                font-style: italic;
+            }
+            .navbar {
+                margin-bottom: 0;
+                background-color: #FFFFFF;
+                z-index: 9999;
+                border: 0;
+                font-size: 12px !important;
+                line-height: 1.42857143 !important;
+                letter-spacing: 4px;
+                border-radius: 0;
+            }
+            .navbar li a, .navbar .navbar-brand {
+                color: black !important;
+            }
+            .navbar-nav li a:hover, .navbar-nav li.active a {
+                color: #FFFFFF !important;
+                background-color: black !important;
+            }
+            .navbar-default .navbar-toggle {
+                border-color: transparent;
+                color: black !important;
+            }
+            .logo {
+                font-size: 200px;
+            }
+            @media screen and (max-width: 768px) {
+                .col-sm-4 {
+                    text-align: center;
+                    margin: 25px 0;
+                }
+            }
+            .container-fluid {
+                padding: 60px 50px;
+            }
+            .bg-grey {
+                background-color: #D9D9D9;
+            }
+            .bg-atas {
+                background-image: url("Atas.jpeg");
+                padding: 100px;
+            }
+            .bg-bawah {
+                background-image: url("parkiran.jpeg") ; 
+                padding: 100px;
+            }
+            .logo-small{
+                color: #FFFFFF;
+                font-size: 50px;
+            }
+            .logo {
+                color: #FFFFFF;
+                font-size: 200px;
+            }
+            .thumbnail {
+                padding: 0 0 15px 0;
+                border: none;
+                border-radius: 0;
+            }
+            .thumbnail img {
+                width: 100%;
+                height: 100%;
+                margin-bottom: 10px;
+            }
+            .carousel-control.right, .carousel-control.left {
+                background-image: none;
+                color: black;
+            }
+            .carousel-indicators li {
+                border-color: black;
+            }
+            .carousel-indicators li.active {
+                background-color: black;
+            }
+            .item h4 {
+                font-size: 19px;
+                line-height: 1.375em;
+                font-weight: 400;
+                font-style: italic;
+                margin: 70px 0;
+            }
+            .item span {
+                font-style: normal;
+            }
+            .panel {
+                border: 1px solid #FFFFFF;
+                border-radius: 0;
+                transition: box-shadow 0.5s;
+            }
+            .panel:hover {
+                box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+            }
+            .panel-footer .btn:hover {
+                border: 1px solid #114E62;
+                background-color: #A45247 !important;
+                color: #FFFFFF;
+            }
+            .panel-heading {
+                color: black !important;
+                background-color: #D9D9D9 !important;
+                padding: 25px;
+                border-bottom: 1px solid transparent;
+                border-top-left-radius: 0px;
+                border-top-right-radius: 0px;
+                border-bottom-left-radius: 0px;
+                border-bottom-right-radius: 0px;
+            }
+            .panel-footer {
+                background-color: #fff !important;
+            }
+            .panel footer h3 {
+                font-size: 32px;
+            }
+            .panel footer h4 {
+                color: black;
+                font-size: 14px;
+            }
+            .panel-footer .btn {
+                margin: 15px 0;
+                background-color: black;
+                color: #fff;
+            }
+            footer .glyphicon {
+                font-size: 20px;
+                margin-bottom: 20px;
+                color: black;
+            }
+            #containerTable1 {background-color: #BB9944; border: 0px solid grey; padding-top: 19px; padding-bottom: 12px; text-align: center}
+        </style>
+    </head>
+    <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#myPage"><img src="Logo.jpg" height="45px" style="margin-top: -10px;"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="Home.html">HOME</a></li>
+                        <li><a href="#roomlist">ROOM LIST</a></li>
+                        <li><a href="Galery.html">GALERY</a></li>
+                        <li><a href="#pricing">CONTACT</a></li>
+                        <li><a href="Reservation.html">RESERVATION</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="containerTable1">
+            <br>
+            <br>
+            <b>GALERY</b>
+        </div>
+        <br>
+        
+      <div class="container-fluid bg-bawah">
+        <h2 class="text-center">CONTACT</h2>
+        <div class="row">
+            <div class="col-sm-5">
+                <p>Contact us and we'll get back to you within 24 hours.</p>
+                <p><span class="glyphicon glyphicon-map-marker"></span> Boyolali, Central Java</p>
+                <p><span class="glyphicon glyphicon-phone"></span> +62 85124356123</p>
+                <p><span class="glyphicon glyphicon-envelope"></span> pondokindahhotel@gmail.com</p>
+            </div>
+            <div class="col-sm-7">
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                    </div>
+                </div>
+                <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+                <div class="row">
+                    <div class="col-sm-12 form-group">
+                        <button class="btn btn-default pull-right" type="submit">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container-fluid text-center">
+        <a href="#myPage" title="To Top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+    </footer>  
+    </body>
+</html>
